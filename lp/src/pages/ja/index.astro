@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Download from "../../components/Download.astro";
+import FAQ from "../../components/FAQ.astro";
+import FeatureGrid from "../../components/FeatureGrid.astro";
+import Footer from "../../components/Footer.astro";
+import Hero from "../../components/Hero.astro";
+import Steps from "../../components/Steps.astro";
+import LanguageSwitch from "../../components/LanguageSwitch.astro";
+import { content } from "../../content/strings";
+---
+
+<BaseLayout
+	title={content.ja.siteTitle}
+	description={content.ja.description}
+	siteTitle={content.ja.siteTitle}
+	lang="ja"
+>
+	<LanguageSwitch slot="lang" current="ja" />
+	<Hero {...content.ja.hero} />
+	<main>
+		<FeatureGrid {...content.ja.features} />
+		<Steps {...content.ja.steps} />
+		<Download {...content.ja.download} />
+		<FAQ {...content.ja.faq} />
+	</main>
+	<Footer {...content.ja.footer} />
+</BaseLayout>

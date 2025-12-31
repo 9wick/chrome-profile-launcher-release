@@ -1,0 +1,31 @@
+---
+const { current } = Astro.props;
+const isJa = current === "ja";
+const baseUrl = import.meta.env.BASE_URL ?? "/";
+const withBase = (path) => `${baseUrl}${path}`.replace(/\/\/+/g, "/");
+---
+
+<div class="lang-switch">
+	<a class={isJa ? "active" : ""} href={withBase("ja/")}>日本語</a>
+	<span>/</span>
+	<a class={!isJa ? "active" : ""} href={withBase("")}>English</a>
+</div>
+
+<style>
+	.lang-switch {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 0.9rem;
+		color: var(--text-muted);
+	}
+
+	.lang-switch a {
+		color: inherit;
+	}
+
+	.lang-switch a.active {
+		color: var(--text);
+		font-weight: 600;
+	}
+</style>

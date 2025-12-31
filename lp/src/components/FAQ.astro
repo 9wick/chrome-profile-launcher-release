@@ -1,0 +1,35 @@
+---
+const { title, items } = Astro.props;
+---
+
+<section>
+	<div class="container">
+		<h2 class="section-title reveal" style="--delay: 0.05s">{title}</h2>
+		<div class="faq-grid">
+			{items.map((item, index) => (
+				<article class="card reveal" style={`--delay: ${0.12 + index * 0.06}s`}>
+					<h3>{item.q}</h3>
+					<p>{item.a}</p>
+				</article>
+			))}
+		</div>
+	</div>
+</section>
+
+<style>
+	.faq-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 24px;
+	}
+
+	.faq-grid h3 {
+		margin: 0 0 12px;
+		font-size: 1.05rem;
+	}
+
+	.faq-grid p {
+		margin: 0;
+		color: var(--text-muted);
+	}
+</style>

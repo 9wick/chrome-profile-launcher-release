@@ -1,0 +1,172 @@
+---
+const { badge, title, lead, actions, meta, card } = Astro.props;
+---
+
+<section class="hero">
+	<div class="container hero-grid">
+		<div class="hero-copy">
+			<span class="badge reveal" style="--delay: 0.05s">{badge}</span>
+			<h1 class="hero-title reveal" style="--delay: 0.12s">
+				{title[0]}
+				<br />
+				{title[1]}
+			</h1>
+			<p class="hero-lead reveal" style="--delay: 0.2s">{lead}</p>
+			<div class="hero-actions reveal" style="--delay: 0.28s">
+				<a class="btn btn-primary" href={actions.primary.href}>{actions.primary.label}</a>
+				<a class="btn btn-secondary" href={actions.secondary.href}>
+					{actions.secondary.label}
+				</a>
+			</div>
+			<div class="hero-meta reveal" style="--delay: 0.36s">
+				{meta.map((item) => (
+					<span>{item}</span>
+				))}
+			</div>
+		</div>
+		<div class="hero-card card reveal" style="--delay: 0.2s">
+			<div class="card-title">{card.title}</div>
+			<ul class="card-list">
+				{card.items.map((item) => (
+					<li>
+						<strong>{item.label}</strong>
+						<span>{item.value}</span>
+					</li>
+				))}
+			</ul>
+			<div class="card-footer">
+				<div class="pulse"></div>
+				<span>{card.footer}</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.hero {
+		padding-top: 120px;
+		padding-bottom: 120px;
+		position: relative;
+		z-index: 1;
+	}
+
+	.hero-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 48px;
+		align-items: center;
+	}
+
+	.hero-title {
+		font-family: var(--font-display);
+		font-size: clamp(2.6rem, 2rem + 2vw, 3.6rem);
+		margin: 18px 0 16px;
+		letter-spacing: 0.05em;
+	}
+
+	.hero-lead {
+		color: var(--text-muted);
+		line-height: 1.7;
+		font-size: 1.1rem;
+		margin: 0 0 28px;
+	}
+
+	.hero-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		margin-bottom: 24px;
+	}
+
+	.hero-meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px;
+		color: var(--text-muted);
+		font-size: 0.95rem;
+	}
+
+	.hero-meta span {
+		padding-left: 16px;
+		position: relative;
+	}
+
+	.hero-meta span::before {
+		content: "";
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: var(--accent-2);
+		position: absolute;
+		left: 0;
+		top: 8px;
+	}
+
+	.hero-card {
+		display: grid;
+		gap: 20px;
+	}
+
+	.card-title {
+		font-weight: 600;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		font-size: 0.85rem;
+		color: var(--text-muted);
+	}
+
+	.card-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: 16px;
+	}
+
+	.card-list li {
+		display: grid;
+		gap: 6px;
+	}
+
+	.card-list strong {
+		font-size: 0.9rem;
+		color: var(--accent);
+	}
+
+	.card-list span {
+		font-size: 1rem;
+	}
+
+	.card-footer {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		color: var(--text-muted);
+		font-size: 0.9rem;
+	}
+
+	.pulse {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: var(--accent-2);
+		box-shadow: 0 0 0 0 rgba(54, 197, 178, 0.6);
+		animation: pulse 1.8s ease-out infinite;
+	}
+
+	@keyframes pulse {
+		0% {
+			box-shadow: 0 0 0 0 rgba(54, 197, 178, 0.6);
+		}
+		100% {
+			box-shadow: 0 0 0 18px rgba(54, 197, 178, 0);
+		}
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			padding-top: 96px;
+			padding-bottom: 84px;
+		}
+	}
+</style>

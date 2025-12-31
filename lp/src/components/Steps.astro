@@ -1,0 +1,51 @@
+---
+const { title, lead, items } = Astro.props;
+---
+
+<section>
+	<div class="container steps">
+		<div>
+			<h2 class="section-title reveal" style="--delay: 0.05s">{title}</h2>
+			<p class="section-lead reveal" style="--delay: 0.12s">{lead}</p>
+		</div>
+		<div class="steps-grid">
+			{items.map((item, index) => (
+				<div class="card reveal" style={`--delay: ${0.18 + index * 0.06}s`}>
+					<span class="step-num">{item.num}</span>
+					<h3>{item.title}</h3>
+					<p>{item.body}</p>
+				</div>
+			))}
+		</div>
+	</div>
+</section>
+
+<style>
+	.steps {
+		display: grid;
+		gap: 32px;
+	}
+
+	.steps-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 20px;
+	}
+
+	.step-num {
+		display: inline-flex;
+		font-weight: 700;
+		color: var(--accent-2);
+		letter-spacing: 0.1em;
+		margin-bottom: 14px;
+	}
+
+	.steps-grid h3 {
+		margin: 0 0 10px;
+	}
+
+	.steps-grid p {
+		margin: 0;
+		color: var(--text-muted);
+	}
+</style>

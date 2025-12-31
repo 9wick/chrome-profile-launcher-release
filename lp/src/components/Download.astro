@@ -1,0 +1,38 @@
+---
+const { title, lead, items } = Astro.props;
+---
+
+<section id="download">
+	<div class="container">
+		<h2 class="section-title reveal" style="--delay: 0.05s">{title}</h2>
+		<p class="section-lead reveal" style="--delay: 0.12s">{lead}</p>
+		<div class="download-grid">
+			{items.map((item, index) => (
+				<div class="card reveal" style={`--delay: ${0.18 + index * 0.06}s`}>
+					<h3>{item.title}</h3>
+					<p>{item.body}</p>
+					<a class={`btn btn-${item.cta.variant}`} href={item.cta.href}>
+						{item.cta.label}
+					</a>
+				</div>
+			))}
+		</div>
+	</div>
+</section>
+
+<style>
+	.download-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 24px;
+	}
+
+	.download-grid h3 {
+		margin: 0 0 12px;
+	}
+
+	.download-grid p {
+		margin: 0 0 20px;
+		color: var(--text-muted);
+	}
+</style>
