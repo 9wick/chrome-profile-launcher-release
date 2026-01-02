@@ -8,7 +8,7 @@ export const content = {
 			"Choose the right Chrome profile when you click links from email, Slack, or Notion. Never open with the wrong account again.",
 		hero: {
 			badge: "macOS first / Windows untested",
-			title: ["Choose your profile", "before you click."],
+			title: ["Choose your profile", "before you open."],
 			lead: "Open links from email, Slack, and Notion with the right Chrome profile. Keep work and personal accounts separate, effortlessly.",
 			actions: {
 				primary: { label: "Download now", href: "#download" },
@@ -121,7 +121,7 @@ export const content = {
 			"メール、Slack、Notionからのリンクを正しいChromeプロファイルで開く。間違ったアカウントで開くことがなくなります。",
 		hero: {
 			badge: "macOS対応 / Windows未検証",
-			title: ["リンクをクリックする前に、", "プロファイルを選ぶ。"],
+			title: ["ブラウザで開く前に、", "プロファイルを選ぶ。"],
 			lead: "メール、Slack、Notionからのリンクを正しいChromeプロファイルで開く。仕事とプライベート、複数アカウントの使い分けを簡単に。",
 			actions: {
 				primary: { label: "今すぐダウンロード", href: "#download" },
