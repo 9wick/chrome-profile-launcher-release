@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82e97fe5-78c8-4303-80d8-706f490b617c" name="変更" comment="refactor: update titles in strings and change favicon to PNG format">
-      <change afterPath="$PROJECT_DIR$/lp/public/howtouse.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lp/src/content/strings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lp/src/content/strings.ts" afterDir="false" />
-    </list>
+    <list default="true" id="82e97fe5-78c8-4303-80d8-706f490b617c" name="変更" comment="feat: add HowToUse component with video demonstration and update hero section" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,31 +48,31 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/kido/Documents/src/github.com/9wick/chrome-profile-launcher-release/lp/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev (1).executor": "Run",
-    "npm.dev.executor": "Run",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kido/Documents/src/github.com/9wick/chrome-profile-launcher-release/lp/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev (1).executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1768521610034" />
     <option name="spentUsd" value="0.009919301" />
@@ -136,7 +132,7 @@
       <updated>1767173223202</updated>
       <workItem from="1767173224865" duration="5146000" />
       <workItem from="1767330832243" duration="144000" />
-      <workItem from="1767333082386" duration="5855000" />
+      <workItem from="1767333082386" duration="6140000" />
     </task>
     <task id="LOCAL-00001" summary="initialize Astro project with essential configuration and components">
       <option name="closed" value="true" />
@@ -194,7 +190,23 @@
       <option name="project" value="LOCAL" />
       <updated>1767341535272</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: add terms page and update navigation links for improved accessibility">
+      <option name="closed" value="true" />
+      <created>1767341889132</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1767341889132</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: add HowToUse component with video demonstration and update hero section">
+      <option name="closed" value="true" />
+      <created>1767342099726</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1767342099726</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +228,9 @@
     <MESSAGE value="update build path configuration and enhance package manager detection in workflows" />
     <MESSAGE value="refactor: enhance Steps component with image support and update LanguageSwitch links" />
     <MESSAGE value="refactor: update titles in strings and change favicon to PNG format" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: update titles in strings and change favicon to PNG format" />
+    <MESSAGE value="feat: add terms page and update navigation links for improved accessibility" />
+    <MESSAGE value="feat: add HowToUse component with video demonstration and update hero section" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add HowToUse component with video demonstration and update hero section" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
