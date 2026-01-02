@@ -41,3 +41,30 @@ Pick your work, personal, or testing profile and launch Chrome instantly with th
 ## Contact / Issues
 
 - https://github.com/9wick/chrome-profile-launcher-release/issues
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
