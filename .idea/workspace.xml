@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82e97fe5-78c8-4303-80d8-706f490b617c" name="変更" comment="update build path configuration and enhance package manager detection in workflows">
+    <list default="true" id="82e97fe5-78c8-4303-80d8-706f490b617c" name="変更" comment="refactor: update titles in strings and change favicon to PNG format">
+      <change afterPath="$PROJECT_DIR$/lp/public/howtouse.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lp/public/SS20260102155135@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lp/src/components/LanguageSwitch.astro" beforeDir="false" afterPath="$PROJECT_DIR$/lp/src/components/LanguageSwitch.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lp/src/components/Steps.astro" beforeDir="false" afterPath="$PROJECT_DIR$/lp/src/components/Steps.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lp/src/content/strings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lp/src/content/strings.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +82,7 @@
     <option name="spentUsd" value="0.009919301" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="4" />
+    <option name="suspendCountdown" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -138,7 +136,7 @@
       <updated>1767173223202</updated>
       <workItem from="1767173224865" duration="5146000" />
       <workItem from="1767330832243" duration="144000" />
-      <workItem from="1767333082386" duration="4919000" />
+      <workItem from="1767333082386" duration="5855000" />
     </task>
     <task id="LOCAL-00001" summary="initialize Astro project with essential configuration and components">
       <option name="closed" value="true" />
@@ -180,7 +178,23 @@
       <option name="project" value="LOCAL" />
       <updated>1767339481204</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor: enhance Steps component with image support and update LanguageSwitch links">
+      <option name="closed" value="true" />
+      <created>1767341111280</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1767341111280</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactor: update titles in strings and change favicon to PNG format">
+      <option name="closed" value="true" />
+      <created>1767341535272</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1767341535272</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +214,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize Astro project with essential configuration and components" />
     <MESSAGE value="update build path configuration and enhance package manager detection in workflows" />
-    <option name="LAST_COMMIT_MESSAGE" value="update build path configuration and enhance package manager detection in workflows" />
+    <MESSAGE value="refactor: enhance Steps component with image support and update LanguageSwitch links" />
+    <MESSAGE value="refactor: update titles in strings and change favicon to PNG format" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: update titles in strings and change favicon to PNG format" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

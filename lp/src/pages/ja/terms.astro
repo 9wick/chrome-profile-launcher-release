@@ -1,0 +1,185 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Footer from "../../components/Footer.astro";
+import LanguageSwitch from "../../components/LanguageSwitch.astro";
+import { content } from "../../content/strings";
+
+const baseUrl = import.meta.env.BASE_URL ?? "/";
+const withBase = (path) => `${baseUrl}${path}`.replace(/\/\/+/g, "/");
+---
+
+<BaseLayout
+	title="利用規約 - Chrome Profile Launcher"
+	description="Chrome Profile Launcherの利用規約"
+	siteTitle={content.ja.siteTitle}
+	lang="ja"
+>
+	<LanguageSwitch slot="lang" current="ja" />
+	<main class="terms-page">
+		<div class="container">
+			<article class="terms-content">
+				<h1>利用規約</h1>
+				<p class="effective-date">施行日: 2025年1月2日</p>
+
+				<section>
+					<h2>1. 規約への同意</h2>
+					<p>Chrome Profile Launcher(以下「本アプリ」といいます)をダウンロード、インストール、または使用することにより、あなたは本利用規約に拘束されることに同意したものとみなされます。これらの規約に同意されない場合は、本アプリを使用しないでください。</p>
+				</section>
+
+				<section>
+					<h2>2. ライセンスの付与</h2>
+					<p>本利用規約に従い、当社はあなたに対して、本アプリをあなた自身の個人的または業務上の目的で使用するための非独占的、譲渡不可能な、再許諾不可能なライセンスを付与します。</p>
+				</section>
+
+				<section>
+					<h2>3. 利用者の責任</h2>
+					<p>あなたは本アプリの使用にあたり、以下の行為を行わないことに同意します:</p>
+					<ul>
+						<li>本アプリを複製、改変、配布、販売、またはリースすること</li>
+						<li>本アプリのリバースエンジニアリング、逆コンパイル、または逆アセンブルを行うこと</li>
+						<li>適用される法令や規制に違反する方法で本アプリを使用すること</li>
+						<li>本アプリを使用して第三者の権利を侵害すること</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>4. 知的財産権</h2>
+					<p>本アプリおよびそれに関連するすべての知的財産権は、当社または当社のライセンサーに帰属します。本利用規約は、本アプリに関するいかなる知的財産権もあなたに譲渡するものではありません。</p>
+				</section>
+
+				<section>
+					<h2>5. 免責事項</h2>
+					<p>本アプリは「現状有姿」かつ「提供可能な範囲」で提供されます。当社は、商品性、特定目的への適合性、および非侵害性に関する黙示の保証を含め、明示または黙示を問わず、いかなる種類の保証も行いません。</p>
+					<p>当社は、本アプリがエラーフリーである、または中断なく動作することを保証しません。</p>
+				</section>
+
+				<section>
+					<h2>6. 責任の制限</h2>
+					<p>適用法で認められる最大限の範囲において、当社は、本アプリの使用または使用不能から生じる直接的、間接的、偶発的、特別、派生的、または懲罰的損害について、たとえ当社がそのような損害の可能性について知らされていた場合であっても、一切の責任を負いません。</p>
+				</section>
+
+				<section>
+					<h2>7. 解除</h2>
+					<p>当社は、あなたが本利用規約のいずれかの条項に違反した場合、事前の通知なく本ライセンスを解除する権利を留保します。解除時には、本アプリの使用を直ちに中止し、すべてのコピーを削除する必要があります。</p>
+				</section>
+
+				<section>
+					<h2>8. 更新と変更</h2>
+					<p>当社は、独自の裁量により、本アプリおよび本利用規約をいつでも変更または中止する権利を留保します。重要な変更がある場合は、本アプリまたは当社のウェブサイトを通じて通知します。変更後も本アプリを引き続き使用することにより、変更された規約に同意したものとみなされます。</p>
+				</section>
+
+				<section>
+					<h2>9. 準拠法</h2>
+					<p>本利用規約は、法の抵触に関する規定にかかわらず、日本国の法律に準拠し、同法に従って解釈されるものとします。</p>
+				</section>
+
+				<section>
+					<h2>10. 価格の変更</h2>
+					<p>本アプリは現在無料で提供されています。当社は、事前の通知をもって、将来的に本アプリの価格設定を変更する権利を留保します。</p>
+				</section>
+
+				<section>
+					<h2>11. 商標</h2>
+					<p>Chrome、Google Chromeは、Google LLCの商標または登録商標です。</p>
+				</section>
+
+				<section>
+					<h2>12. お問い合わせ</h2>
+					<p>本利用規約に関するご質問がある場合は、GitHubのIssuesページからお問い合わせください。</p>
+					<p><a href="https://github.com/9wick/chrome-profile-launcher-release/issues" target="_blank" rel="noopener noreferrer">https://github.com/9wick/chrome-profile-launcher-release/issues</a></p>
+				</section>
+			</article>
+		</div>
+	</main>
+	<Footer {...content.ja.footer} />
+</BaseLayout>
+
+<style>
+	.terms-page {
+		padding: 48px 0 96px;
+		min-height: calc(100vh - 200px);
+	}
+
+	.terms-content {
+		background: var(--panel);
+		border: 1px solid var(--panel-border);
+		border-radius: 12px;
+		padding: 48px;
+		max-width: 800px;
+		margin: 0 auto;
+		box-shadow: 0 14px 28px rgba(15, 23, 36, 0.08);
+	}
+
+	h1 {
+		font-size: 2.2rem;
+		margin: 0 0 8px;
+		letter-spacing: 0.01em;
+		color: var(--text);
+	}
+
+	.effective-date {
+		color: var(--text-muted);
+		margin: 0 0 32px;
+		font-size: 0.95rem;
+	}
+
+	section {
+		margin-bottom: 32px;
+		padding: 0;
+	}
+
+	section:last-of-type {
+		margin-bottom: 0;
+	}
+
+	h2 {
+		font-size: 1.3rem;
+		margin: 0 0 12px;
+		color: var(--text);
+		font-weight: 600;
+	}
+
+	p {
+		line-height: 1.8;
+		margin: 0 0 12px;
+		color: var(--text);
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	ul {
+		margin: 12px 0;
+		padding-left: 24px;
+		line-height: 1.8;
+	}
+
+	li {
+		margin-bottom: 8px;
+		color: var(--text);
+	}
+
+	a {
+		color: var(--accent);
+		text-decoration: underline;
+	}
+
+	a:hover {
+		color: var(--accent-2);
+	}
+
+	@media (max-width: 768px) {
+		.terms-content {
+			padding: 32px 24px;
+		}
+
+		h1 {
+			font-size: 1.8rem;
+		}
+
+		h2 {
+			font-size: 1.1rem;
+		}
+	}
+</style>

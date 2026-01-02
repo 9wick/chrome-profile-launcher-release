@@ -1,0 +1,6 @@
+---
+// English terms page redirects to Japanese version
+const baseUrl = import.meta.env.BASE_URL ?? "/";
+const jaTermsUrl = `${baseUrl}ja/terms`.replace(/\/\/+/g, "/");
+return Astro.redirect(jaTermsUrl);
+---
