@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82e97fe5-78c8-4303-80d8-706f490b617c" name="変更" comment="initialize Astro project with essential configuration and components">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/astro.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/astro.yml" afterDir="false" />
+    <list default="true" id="82e97fe5-78c8-4303-80d8-706f490b617c" name="変更" comment="update build path configuration and enhance package manager detection in workflows">
+      <change beforePath="$PROJECT_DIR$/lp/src/components/Footer.astro" beforeDir="false" afterPath="$PROJECT_DIR$/lp/src/components/Footer.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lp/src/components/Hero.astro" beforeDir="false" afterPath="$PROJECT_DIR$/lp/src/components/Hero.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lp/src/content/strings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lp/src/content/strings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lp/src/layouts/BaseLayout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/lp/src/layouts/BaseLayout.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,49 +27,60 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "9wick"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;9wick&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "ssh://git@github.com/9wick/chrome-profile-launcher-release.git",
-    "accountId": "7b779eea-2c6a-4e5f-86b5-476b45893a4d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;ssh://git@github.com/9wick/chrome-profile-launcher-release.git&quot;,
+    &quot;accountId&quot;: &quot;7b779eea-2c6a-4e5f-86b5-476b45893a4d&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="37bYQcy5vry5eTCSaig7Qppd7fA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev (1).executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="npm.dev (1)">
+    <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/lp/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -79,6 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev (1)" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -97,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1767173223202</updated>
-      <workItem from="1767173224865" duration="3357000" />
+      <workItem from="1767173224865" duration="5146000" />
     </task>
     <task id="LOCAL-00001" summary="initialize Astro project with essential configuration and components">
       <option name="closed" value="true" />
@@ -115,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767176474879</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update build path configuration and enhance package manager detection in workflows">
+      <option name="closed" value="true" />
+      <created>1767176686202</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1767176686202</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +157,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize Astro project with essential configuration and components" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialize Astro project with essential configuration and components" />
+    <MESSAGE value="update build path configuration and enhance package manager detection in workflows" />
+    <option name="LAST_COMMIT_MESSAGE" value="update build path configuration and enhance package manager detection in workflows" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

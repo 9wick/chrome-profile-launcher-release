@@ -4,7 +4,7 @@ export const content = {
 		description:
 			"A lightweight launcher that switches Chrome profiles in one click and opens URLs with the right profile.",
 		hero: {
-			badge: "macOS / Windows",
+			badge: "macOS first / Windows untested",
 			title: ["Switch Chrome profiles", "in a heartbeat."],
 			lead: "Move between work, personal, and staging profiles without friction. Set URLs and launch options instantly.",
 			actions: {
@@ -14,7 +14,7 @@ export const content = {
 					href: "https://github.com/9wick/chrome-profile-launcher-release",
 				},
 			},
-			meta: ["Auto-generate launch args", "URL scheme ready", "Lightweight binary"],
+			meta: ["No background process", "URL scheme ready", "Launch args auto-set"],
 			card: {
 				title: "Chrome Profile Launcher",
 				items: [
@@ -123,7 +123,7 @@ export const content = {
 		description:
 			"Chromeのプロファイルを1クリックで切り替える軽量ランチャー。URL指定やスクリプト連携にも対応。",
 		hero: {
-			badge: "macOS / Windows 対応",
+			badge: "macOS対応 / Windows未検証",
 			title: ["Chromeのプロファイルを", "一瞬で切り替える。"],
 			lead: "仕事とプライベート、複数アカウントを迷わず起動。URLの指定にも対応した軽量ランチャーです。",
 			actions: {
@@ -133,7 +133,7 @@ export const content = {
 					href: "https://github.com/9wick/chrome-profile-launcher-release",
 				},
 			},
-			meta: ["起動パラメータを自動生成", "URLスキーム対応", "軽量バイナリ"],
+			meta: ["常駐なし", "URLスキーム対応", "起動パラメータ自動化"],
 			card: {
 				title: "Chrome Profile Launcher",
 				items: [

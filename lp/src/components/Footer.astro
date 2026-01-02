@@ -19,8 +19,8 @@ const { title, lead, links } = Astro.props;
 <style>
 	footer {
 		padding: 64px 0 80px;
-		border-top: 1px solid rgba(255, 255, 255, 0.08);
-		background: linear-gradient(180deg, rgba(21, 29, 43, 0.6), rgba(11, 15, 20, 0.9));
+		border-top: 1px solid rgba(15, 23, 36, 0.08);
+		background: var(--bg-soft);
 	}
 
 	.footer {
@@ -32,7 +32,6 @@ const { title, lead, links } = Astro.props;
 	}
 
 	.footer-title {
-		font-family: var(--font-display);
 		font-size: 1.2rem;
 		margin: 0 0 8px;
 	}
