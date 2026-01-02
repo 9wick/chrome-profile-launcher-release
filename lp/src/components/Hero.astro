@@ -14,9 +14,6 @@ const { badge, title, lead, actions, meta, image } = Astro.props;
 			<p class="hero-lead reveal" style="--delay: 0.2s">{lead}</p>
 			<div class="hero-actions reveal" style="--delay: 0.28s">
 				<a class="btn btn-primary" href={actions.primary.href}>{actions.primary.label}</a>
-				<a class="btn btn-secondary" href={actions.secondary.href}>
-					{actions.secondary.label}
-				</a>
 			</div>
 			<div class="hero-meta reveal" style="--delay: 0.36s">
 				{meta.map((item) => (

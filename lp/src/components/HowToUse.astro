@@ -1,0 +1,45 @@
+---
+const { title, lead } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL ?? "/";
+const videoPath = `${baseUrl}howtouse.mp4`.replace(/\/\/+/g, "/");
+---
+
+<section class="how-to-use">
+	<div class="container">
+		<h2 class="section-title reveal">{title}</h2>
+		{lead && <p class="section-lead reveal" style="--delay: 0.1s">{lead}</p>}
+		<div class="video-wrapper reveal" style="--delay: 0.2s">
+			<video controls autoplay muted loop playsinline>
+				<source src={videoPath} type="video/mp4" />
+				お使いのブラウザは動画タグをサポートしていません。
+			</video>
+		</div>
+	</div>
+</section>
+
+<style>
+	.how-to-use {
+		text-align: center;
+	}
+
+	.video-wrapper {
+		max-width: 900px;
+		margin: 0 auto;
+		border-radius: 16px;
+		overflow: hidden;
+		box-shadow: 0 22px 44px rgba(15, 23, 36, 0.25);
+		background: var(--panel);
+	}
+
+	video {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	@media (max-width: 768px) {
+		.video-wrapper {
+			border-radius: 12px;
+		}
+	}
+</style>

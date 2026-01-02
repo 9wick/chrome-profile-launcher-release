@@ -12,10 +12,6 @@ export const content = {
 			lead: "Open links from email, Slack, and Notion with the right Chrome profile. Keep work and personal accounts separate, effortlessly.",
 			actions: {
 				primary: { label: "Download now", href: "#download" },
-				secondary: {
-					label: "View on GitHub",
-					href: "https://github.com/9wick/chrome-profile-launcher-release",
-				},
 			},
 			meta: ["No background process"],
 			image: {
@@ -24,6 +20,10 @@ export const content = {
 				width: heroImage.width,
 				height: heroImage.height,
 			},
+		},
+		howToUse: {
+			title: "See it in action",
+			lead: "Watch how Chrome Profile Launcher works in real-time.",
 		},
 		features: {
 			title: "Never open the wrong profile again",
@@ -126,10 +126,6 @@ export const content = {
 			lead: "メール、Slack、Notionからのリンクを正しいChromeプロファイルで開く。仕事とプライベート、複数アカウントの使い分けを簡単に。",
 			actions: {
 				primary: { label: "今すぐダウンロード", href: "#download" },
-				secondary: {
-					label: "GitHubで見る",
-					href: "https://github.com/9wick/chrome-profile-launcher-release",
-				},
 			},
 			meta: ["常駐なし"],
 			image: {
@@ -138,6 +134,10 @@ export const content = {
 				width: heroImage.width,
 				height: heroImage.height,
 			},
+		},
+		howToUse: {
+			title: "実際の使い方を見る",
+			lead: "Chrome Profile Launcherの動作をリアルタイムで確認できます。",
 		},
 		features: {
 			title: "もう間違ったプロファイルで開かない",

@@ -5,6 +5,7 @@ import FAQ from "../../components/FAQ.astro";
 import FeatureGrid from "../../components/FeatureGrid.astro";
 import Footer from "../../components/Footer.astro";
 import Hero from "../../components/Hero.astro";
+import HowToUse from "../../components/HowToUse.astro";
 import Steps from "../../components/Steps.astro";
 import LanguageSwitch from "../../components/LanguageSwitch.astro";
 import { content } from "../../content/strings";
@@ -19,6 +20,7 @@ import { content } from "../../content/strings";
 	<LanguageSwitch slot="lang" current="ja" />
 	<Hero {...content.ja.hero} />
 	<main>
+		<HowToUse {...content.ja.howToUse} />
 		<FeatureGrid {...content.ja.features} />
 		<Steps {...content.ja.steps} />
 		<Download {...content.ja.download} />
