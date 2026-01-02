@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82e97fe5-78c8-4303-80d8-706f490b617c" name="変更" comment="update build path configuration and enhance package manager detection in workflows">
-      <change afterPath="$PROJECT_DIR$/lp/public/SS20260102155135@2x.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lp/src/components/Hero.astro" beforeDir="false" afterPath="$PROJECT_DIR$/lp/src/components/Hero.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lp/public/SS20260102155135@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lp/src/components/LanguageSwitch.astro" beforeDir="false" afterPath="$PROJECT_DIR$/lp/src/components/LanguageSwitch.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lp/src/components/Steps.astro" beforeDir="false" afterPath="$PROJECT_DIR$/lp/src/components/Steps.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lp/src/content/strings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lp/src/content/strings.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,10 +84,13 @@
     <option name="spentUsd" value="0.009919301" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="5" />
+    <option name="suspendCountdown" value="4" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lp/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lp/public" />
     </key>
   </component>
@@ -135,7 +138,7 @@
       <updated>1767173223202</updated>
       <workItem from="1767173224865" duration="5146000" />
       <workItem from="1767330832243" duration="144000" />
-      <workItem from="1767333082386" duration="3406000" />
+      <workItem from="1767333082386" duration="4919000" />
     </task>
     <task id="LOCAL-00001" summary="initialize Astro project with essential configuration and components">
       <option name="closed" value="true" />
@@ -169,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767330908829</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactor: update Hero component to use image prop and enhance README content">
+      <option name="closed" value="true" />
+      <created>1767339481204</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1767339481204</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,3 +1,6 @@
+import settingViewImage from "../assets/setting_view.png";
+import heroImage from "../assets/SS20260102155135@2x.png";
+
 export const content = {
 	en: {
 		siteTitle: "Chrome Profile Launcher",
@@ -16,10 +19,10 @@ export const content = {
 			},
 			meta: ["No background process"],
 			image: {
-				src: "/SS20260102155135@2x.png",
+				src: heroImage.src,
 				alt: "Chrome Profile Launcher sample screen",
-				width: 1104,
-				height: 414,
+				width: heroImage.width,
+				height: heroImage.height,
 			},
 		},
 		features: {
@@ -45,9 +48,15 @@ export const content = {
 			lead: "Set it up once and use it everywhere.",
 			items: [
 				{ num: "01", title: "Download the app", body: "Grab the latest release for your OS." },
-				{ num: "02", title: "Set as default browser", body: "Configure this app as your default browser in system settings." },
+				{ num: "02", title: "Set as default browser", body: "Click the button in settings to set as your default browser." },
 				{ num: "03", title: "Click and choose", body: "Click any link, select your profile, and start browsing." },
 			],
+			image: {
+				src: settingViewImage.src,
+				alt: "Chrome Profile Launcher settings screen",
+				width: settingViewImage.width,
+				height: settingViewImage.height,
+			},
 		},
 		download: {
 			title: "Download",
@@ -57,8 +66,8 @@ export const content = {
 					title: "macOS",
 					body: "Universal build for Apple Silicon and Intel.",
 					cta: {
-						label: "Go to Releases",
-						href: "https://github.com/9wick/chrome-profile-launcher-release/releases",
+						label: "Download for macOS",
+						href: "https://github.com/9wick/chrome-profile-launcher-release/releases/latest/download/Chrome.Profile.Launcher.dmg",
 						variant: "primary",
 					},
 				},
@@ -66,8 +75,8 @@ export const content = {
 					title: "Windows",
 					body: "Download the zip and run the executable.",
 					cta: {
-						label: "Go to Releases",
-						href: "https://github.com/9wick/chrome-profile-launcher-release/releases",
+						label: "Download for Windows",
+						href: "https://github.com/9wick/chrome-profile-launcher-release/releases/latest/download/chrome-profile-launcher-x86_64-pc-windows-gnu.msi",
 						variant: "primary",
 					},
 				},
@@ -123,10 +132,10 @@ export const content = {
 			},
 			meta: ["常駐なし"],
 			image: {
-				src: "/SS20260102155135@2x.png",
+				src: heroImage.src,
 				alt: "Chrome Profile Launcherのサンプル画面",
-				width: 1104,
-				height: 414,
+				width: heroImage.width,
+				height: heroImage.height,
 			},
 		},
 		features: {
@@ -152,9 +161,15 @@ export const content = {
 			lead: "一度設定すれば、どこでも使えます。",
 			items: [
 				{ num: "01", title: "アプリをダウンロード", body: "OSに合った最新リリースを取得します。" },
-				{ num: "02", title: "デフォルトブラウザに設定", body: "システム設定でこのアプリをデフォルトブラウザに設定します。" },
+				{ num: "02", title: "デフォルトブラウザに設定", body: "設定画面のボタンをクリックして、デフォルトブラウザに設定します。" },
 				{ num: "03", title: "クリックして選択", body: "リンクをクリックし、プロファイルを選んで、ブラウジングを開始します。" },
 			],
+			image: {
+				src: settingViewImage.src,
+				alt: "Chrome Profile Launcher設定画面",
+				width: settingViewImage.width,
+				height: settingViewImage.height,
+			},
 		},
 		download: {
 			title: "ダウンロード",
@@ -164,8 +179,8 @@ export const content = {
 					title: "macOS",
 					body: "Apple Silicon / Intel 両対応。",
 					cta: {
-						label: "Releaseへ進む",
-						href: "https://github.com/9wick/chrome-profile-launcher-release/releases",
+						label: "macOS版をダウンロード",
+						href: "https://github.com/9wick/chrome-profile-launcher-release/releases/latest/download/Chrome.Profile.Launcher.dmg",
 						variant: "primary",
 					},
 				},
@@ -173,8 +188,8 @@ export const content = {
 					title: "Windows",
 					body: "zip版を展開して実行できます。",
 					cta: {
-						label: "Releaseへ進む",
-						href: "https://github.com/9wick/chrome-profile-launcher-release/releases",
+						label: "Windows版をダウンロード",
+						href: "https://github.com/9wick/chrome-profile-launcher-release/releases/latest/download/chrome-profile-launcher-x86_64-pc-windows-gnu.msi",
 						variant: "primary",
 					},
 				},

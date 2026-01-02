@@ -6,7 +6,7 @@ const withBase = (path) => `${baseUrl}${path}`.replace(/\/\/+/g, "/");
 ---
 
 <div class="lang-switch">
-	<a class={isJa ? "active" : ""} href={withBase("ja/")}>日本語</a>
+	<a class={isJa ? "active" : ""} href={withBase("/ja/")}>日本語
 	<span>/</span>
 	<a class={!isJa ? "active" : ""} href={withBase("")}>English</a>
 </div>

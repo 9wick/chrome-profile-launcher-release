@@ -1,5 +1,5 @@
 ---
-const { title, lead, items } = Astro.props;
+const { title, lead, items, image } = Astro.props;
 ---
 
 <section>
@@ -8,14 +8,28 @@ const { title, lead, items } = Astro.props;
 			<h2 class="section-title reveal" style="--delay: 0.05s">{title}</h2>
 			<p class="section-lead reveal" style="--delay: 0.12s">{lead}</p>
 		</div>
-		<div class="steps-grid">
-			{items.map((item, index) => (
-				<div class="card reveal" style={`--delay: ${0.18 + index * 0.06}s`}>
-					<span class="step-num">{item.num}</span>
-					<h3>{item.title}</h3>
-					<p>{item.body}</p>
+		<div class="steps-content">
+			<div class="steps-grid">
+				{items.map((item, index) => (
+					<div class="card reveal" style={`--delay: ${0.18 + index * 0.06}s`}>
+						<span class="step-num">{item.num}</span>
+						<h3>{item.title}</h3>
+						<p>{item.body}</p>
+					</div>
+				))}
+			</div>
+			{image && (
+				<div class="steps-image reveal" style="--delay: 0.36s">
+					<img
+						src={image.src}
+						alt={image.alt}
+						width={image.width}
+						height={image.height}
+						loading="lazy"
+						decoding="async"
+					/>
 				</div>
-			))}
+			)}
 		</div>
 	</div>
 </section>
@@ -26,9 +40,16 @@ const { title, lead, items } = Astro.props;
 		gap: 32px;
 	}
 
+	.steps-content {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 48px;
+		align-items: start;
+	}
+
 	.steps-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		grid-template-columns: 1fr;
 		gap: 20px;
 	}
 
@@ -47,5 +68,25 @@ const { title, lead, items } = Astro.props;
 	.steps-grid p {
 		margin: 0;
 		color: var(--text-muted);
+	}
+
+	.steps-image {
+		display: flex;
+		justify-content: center;
+		align-items: start;
+	}
+
+	.steps-image img {
+		width: min(640px, 100%);
+		height: auto;
+		display: block;
+		border-radius: 16px;
+		box-shadow: 0 16px 32px rgba(15, 23, 36, 0.2);
+	}
+
+	@media (max-width: 768px) {
+		.steps-content {
+			gap: 32px;
+		}
 	}
 </style>
